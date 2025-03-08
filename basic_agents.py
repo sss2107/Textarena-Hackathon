@@ -593,7 +593,7 @@ class AnthropicAgent(Agent):
                 "Install it with: pip install anthropic"
             )
             
-        self.client = anthropic.Anthropic(api_key="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")
+        self.client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
     
     def _make_request(self, observation: str) -> str:
         """Make a single API request to Anthropic and return the generated message."""
